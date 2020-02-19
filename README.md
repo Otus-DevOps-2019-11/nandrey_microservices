@@ -31,3 +31,12 @@ HW#17
 5. containers started with docker-compose with var file
 
 -===-===-
+
+HW#18
+
+1. Docker Gitlab VM in GCP created
+2. project in Gitlab created
+3. pipeline with environments defined and tested
+4. dynamic environment added to a job
+
+-===-===-
