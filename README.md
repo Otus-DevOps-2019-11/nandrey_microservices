@@ -12,3 +12,10 @@ HW#15
 7. container from new image started
 
 -===-===-
+
+HW#16
+
+1. Downloaded code for 3 services
+2. Configured and started our application as 3 containers in bridge network
+
+-===-===-
