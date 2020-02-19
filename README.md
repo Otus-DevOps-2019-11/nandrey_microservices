@@ -19,3 +19,15 @@ HW#16
 2. Configured and started our application as 3 containers in bridge network
 
 -===-===-
+
+HW#17
+
+1. By default docker-compose uses base directory name as project name
+    it can be changed with option:
+    -p, --project-name NAME
+2. tested various docker host network modes
+3. containers starter in bridge network mode with aliases
+4. containers started in bridge network mode in two networks with aliases
+5. containers started with docker-compose with var file
+
+-===-===-
