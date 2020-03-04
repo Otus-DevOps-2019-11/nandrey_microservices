@@ -32,11 +32,21 @@ HW#17
 
 -===-===-
 
-HW#18
+HW#19
 
 1. Docker Gitlab VM in GCP created
 2. project in Gitlab created
 3. pipeline with environments defined and tested
 4. dynamic environment added to a job
+
+-===-===-
+
+HW#20
+
+My repositories https://hub.docker.com/u/anikolav
+
+1. Created Prometheus monitoring microservice
+2. Add project microservices monitoring to Prometheus
+3. Images are pushed to Docker hub
 
 -===-===-
