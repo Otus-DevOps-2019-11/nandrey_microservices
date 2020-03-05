@@ -50,3 +50,13 @@ My repositories https://hub.docker.com/u/anikolav
 3. Images are pushed to Docker hub
 
 -===-===-
+
+HW#21
+
+1. Microservices and monitoring microservices are now in different compose files
+2. Added monitoring of Docker containers with cAdvisor
+3. Added visualisation with Grafana
+4. Added alerting and tested alert via Slack channel
+5. All Docker images are pushed in DockerHub
+
+-===-===-
