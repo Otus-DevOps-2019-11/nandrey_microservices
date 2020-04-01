@@ -14,6 +14,11 @@ services:
   ui:
     image: ${USER_NAME}/ui:${UI_VER}
     container_name: ui
+    logging:
+      driver: "fluentd"
+      options:
+        fluentd-address: localhost:24224
+        tag: service.ui
     ports:
       - ${UI_PORT}:${UI_PORT}/tcp
     networks:
@@ -21,6 +26,18 @@ services:
 
   post:
     image: ${USER_NAME}/post:${POST_VER}
+    environment:
+      - POST_DATABASE_HOST=post_db
+      - POST_DATABASE=posts
+    depends_on:
+      - post_db
+    ports:
+      - "5000:5000"
+    logging:
+      driver: "fluentd"
+      options:
+        fluentd-address: localhost:24224
+        tag: service.post
     container_name: post
     networks:
       - back_net
