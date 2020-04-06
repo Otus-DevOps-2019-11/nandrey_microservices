@@ -12,7 +12,7 @@ services:
           - comment_db
 
   ui:
-    image: ${USER_NAME}/ui:${UI_VER}
+    image: ${USER_NAME}/ui:logging
     container_name: ui
     logging:
       driver: "fluentd"
@@ -25,7 +25,7 @@ services:
       - front_net
 
   post:
-    image: ${USER_NAME}/post:${POST_VER}
+    image: ${USER_NAME}/post:logging
     environment:
       - POST_DATABASE_HOST=post_db
       - POST_DATABASE=posts
@@ -44,7 +44,7 @@ services:
       - front_net
 
   comment:
-    image: ${USER_NAME}/comment:${COMMENT_VER}
+    image: ${USER_NAME}/comment:logging
     container_name: comment
     networks:
       - back_net
