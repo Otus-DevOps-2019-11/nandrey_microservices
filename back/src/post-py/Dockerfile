@@ -4,7 +4,10 @@ WORKDIR /app
 ADD . /app
 
 RUN apk --no-cache --update add build-base && \
+    pip install --upgrade pip && \
     pip install -r /app/requirements.txt && \
+    apk add gcc && \
+    apk add musl-dev && \
     apk del build-base
 
 ENV POST_DATABASE_HOST post_db

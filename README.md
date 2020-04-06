@@ -60,3 +60,11 @@ HW#21
 5. All Docker images are pushed in DockerHub
 
 -===-===-
+
+HW#23
+1. EFK added like sender, aggregator and convertor for log messages
+2. Post microservice configured to send logs to fluentd
+3. UI microservice configured to send logs to fluentd
+4. Zipkin tracer added like log parser
+
+-===-===-
